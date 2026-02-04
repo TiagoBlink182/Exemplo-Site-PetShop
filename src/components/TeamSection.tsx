@@ -20,17 +20,17 @@ const team = [
 
 const TeamSection = () => {
   return (
-    <section id="team" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="team" className="py-10 bg-background">
+      <div className="container mx-auto px-2">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div>
             <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
               Nossa Equipe
             </span>
-            <h2 className="section-title mb-6">
+            <h2 className="section-title mb-4">
               PROFISSIONAIS QUALIFICADOS PARA O CUIDADO DE ANIMAIS DE ESTIMAÇÃO
             </h2>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed">
               Nossa equipe é formada por profissionais apaixonados por animais, com anos de experiência 
               e formação especializada para garantir o melhor atendimento para o seu pet.
             </p>
@@ -39,19 +39,19 @@ const TeamSection = () => {
             </a>
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-3 gap-3">
             {team.map((member, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-xl"
+                className="group relative overflow-hidden rounded-lg"
               >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="absolute bottom-0 left-0 right-0 p-3">
                     <h4 className="font-bold text-primary-foreground">{member.name}</h4>
                     <p className="text-primary-foreground/80 text-sm">{member.role}</p>
                     <div className="flex gap-3 mt-3">
@@ -71,7 +71,7 @@ const TeamSection = () => {
                   </div>
                 </div>
                 {/* Default visible info */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-foreground/80 to-transparent group-hover:opacity-0 transition-opacity">
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-foreground/80 to-transparent group-hover:opacity-0 transition-opacity">
                   <h4 className="font-bold text-primary-foreground">{member.name}</h4>
                   <p className="text-primary-foreground/80 text-sm">{member.role}</p>
                 </div>

@@ -21,8 +21,8 @@ const AboutSection = () => {
                 className="w-full h-[400px] object-cover"
               />
             </div>
-            {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-xl max-w-xs hidden md:block">
+            {/* Floating Card (moved below image to avoid overlapping) */}
+            <div className="mt-4 bg-card p-4 rounded-lg shadow-xl max-w-xs hidden md:block">
               <h4 className="font-bold text-foreground text-lg mb-2">
                 NÓS MANTEMOS SEUS ANIMAIS DE ESTIMAÇÃO FELIZES O TEMPO TODO.
               </h4>

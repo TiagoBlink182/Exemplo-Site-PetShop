@@ -2,7 +2,7 @@ import { Play, Calendar } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-[420px] lg:min-h-[520px] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -13,19 +13,18 @@ const Hero = () => {
         <div className="gradient-overlay" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-2 relative z-10">
         <div className="max-w-2xl">
-          <span className="text-primary font-semibold text-lg mb-4 block animate-fade-in">
+          <span className="text-primary font-semibold text-sm mb-3 block animate-fade-in">
             PET SHOP
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-slide-in-left">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-4 animate-slide-in-left">
             FAÇA SEUS ANIMAIS DE ESTIMAÇÃO FELIZES
           </h1>
-          <p className="text-primary-foreground/80 text-lg mb-8 max-w-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <p className="text-primary-foreground/80 text-base mb-4 max-w-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Cuidamos dos seus pets com amor e dedicação. Oferecemos os melhores serviços e produtos para garantir a saúde e felicidade do seu melhor amigo.
           </p>
-          
-          <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-wrap gap-2 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <a href="#services" className="btn-primary">
               <Calendar size={20} />
               Agendar Agora

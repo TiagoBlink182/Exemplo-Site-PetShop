@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header className="w-full">
       {/* Top Bar */}
-      <div className="bg-foreground text-primary-foreground py-2">
+      <div className="bg-foreground text-primary-foreground py-1">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
             <a href="mailto:contato@petshop.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail size={14} />
               <span className="hidden sm:inline">contato@petshop.com</span>
@@ -28,18 +28,18 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="bg-background shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+        <div className="container mx-auto px-2">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <a href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">🐾</span>
+              <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg">🐾</span>
               </div>
-              <span className="font-bold text-xl text-foreground">PET SHOP</span>
+              <span className="font-bold text-lg text-foreground">PET SHOP</span>
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-4">
               <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
                 INÍCIO
               </a>

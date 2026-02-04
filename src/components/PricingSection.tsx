@@ -44,9 +44,9 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section id="pricing" className="py-10 bg-secondary">
+      <div className="container mx-auto px-2">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
             Nossos Planos
           </span>
@@ -54,19 +54,18 @@ const PricingSection = () => {
             PREÇOS COMPETITIVOS PARA SERVIÇOS PARA ANIMAIS DE ESTIMAÇÃO
           </h2>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`rounded-2xl p-8 card-hover ${
+              className={`rounded-xl p-6 card-hover ${
                 plan.featured
                   ? "bg-primary text-primary-foreground scale-105"
                   : "bg-card"
               }`}
             >
-              <div className="text-center mb-8">
-                <h3 className={`font-bold text-xl mb-2 ${plan.featured ? "" : "text-foreground"}`}>
+              <div className="text-center mb-6">
+                <h3 className={`font-bold text-lg mb-2 ${plan.featured ? "" : "text-foreground"}`}>
                   {plan.name}
                 </h3>
                 <p className={`text-sm mb-4 ${plan.featured ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
@@ -74,12 +73,11 @@ const PricingSection = () => {
                 </p>
                 <div className="flex items-baseline justify-center gap-1">
                   <span className={`text-sm ${plan.featured ? "" : "text-muted-foreground"}`}>R$</span>
-                  <span className="text-5xl font-bold">{plan.price}</span>
+                  <span className="text-4xl font-bold">{plan.price}</span>
                   <span className={`text-sm ${plan.featured ? "" : "text-muted-foreground"}`}>/mês</span>
                 </div>
               </div>
-
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-3 mb-6">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <span className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${
@@ -91,8 +89,7 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-
-              <button className={`w-full py-4 rounded-lg font-semibold transition-colors ${
+              <button className={`w-full py-3 rounded-lg font-semibold transition-colors ${
                 plan.featured
                   ? "bg-foreground text-primary-foreground hover:bg-foreground/90"
                   : "bg-primary text-primary-foreground hover:bg-primary/90"

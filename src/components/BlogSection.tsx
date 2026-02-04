@@ -26,9 +26,9 @@ const posts = [
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section id="blog" className="py-10 bg-background">
+      <div className="container mx-auto px-2">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
             Nosso Blog
           </span>
@@ -36,8 +36,7 @@ const BlogSection = () => {
             ÚLTIMOS ARTIGOS DO NOSSO BLOG
           </h2>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-4">
           {posts.map((post, index) => (
             <article
               key={index}
@@ -47,14 +46,14 @@ const BlogSection = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-44 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                <div className="absolute top-3 left-3 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-sm font-medium">
                   Novo
                 </div>
               </div>
-              <div className="p-6">
-                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+              <div className="p-4">
+                <div className="flex items-center gap-3 text-sm text-muted-foreground mb-3">
                   <span className="flex items-center gap-1">
                     <Calendar size={14} />
                     {post.date}
@@ -64,10 +63,10 @@ const BlogSection = () => {
                     {post.author}
                   </span>
                 </div>
-                <h3 className="font-bold text-foreground text-lg mb-3 group-hover:text-primary transition-colors">
+                <h3 className="font-bold text-foreground text-base mb-2 group-hover:text-primary transition-colors">
                   {post.title}
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-3">
                   {post.excerpt}
                 </p>
                 <a href="#" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">

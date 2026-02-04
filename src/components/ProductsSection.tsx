@@ -33,9 +33,9 @@ const products = [
 
 const ProductsSection = () => {
   return (
-    <section id="products" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section id="products" className="py-10 bg-background">
+      <div className="container mx-auto px-2">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
             Produtos
           </span>
@@ -44,7 +44,7 @@ const ProductsSection = () => {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {products.map((product, index) => (
             <div
               key={index}
@@ -54,13 +54,13 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <button className="absolute top-4 right-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <ShoppingCart size={18} className="text-primary-foreground" />
                 </button>
               </div>
-              <div className="p-6">
+              <div className="p-4">
                 <div className="flex gap-1 mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star
