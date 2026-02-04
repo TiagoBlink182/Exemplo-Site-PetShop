@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando...</title>
+    <script>
+      // Redireciona todas as rotas para index.html
+      var path = window.location.pathname.replace('/Exemplo-Site-PetShop', '');
+      window.location.replace('/Exemplo-Site-PetShop/?' + path.slice(1));
+    </script>
+  </head>
+  <body></body>
+</html>
