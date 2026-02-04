@@ -9,9 +9,9 @@ const images = [
 
 const GallerySection = () => {
   return (
-    <section className="py-10 bg-secondary">
-      <div className="container mx-auto px-2">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section className="py-8 md:py-12 lg:py-10 bg-secondary">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
             Galeria
           </span>
@@ -20,7 +20,7 @@ const GallerySection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1 sm:gap-2">
           {images.map((image, index) => (
             <div
               key={index}

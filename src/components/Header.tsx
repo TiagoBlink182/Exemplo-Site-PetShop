@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <header className="w-full">
       {/* Top Bar */}
-      <div className="bg-foreground text-primary-foreground py-1">
-        <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
+      <div className="bg-foreground text-primary-foreground py-0.5 md:py-1">
+        <div className="container mx-auto px-2 md:px-4 flex flex-wrap justify-between items-center text-xs md:text-sm gap-2">
           <div className="flex items-center gap-4">
             <a href="mailto:contato@petshop.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail size={14} />
@@ -28,31 +28,31 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="bg-background shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-2">
-          <div className="flex items-center justify-between h-16">
+        <div className="container mx-auto px-2 md:px-4">
+          <div className="flex items-center justify-between h-14 md:h-16">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2">
-              <div className="w-9 h-9 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">🐾</span>
+            <a href="/" className="flex items-center gap-1 md:gap-2">
+              <div className="w-8 md:w-9 h-8 md:h-9 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-base md:text-lg">🐾</span>
               </div>
-              <span className="font-bold text-lg text-foreground">PET SHOP</span>
+              <span className="font-bold text-base md:text-lg text-foreground">PET SHOP</span>
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-4">
-              <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
+            <div className="hidden lg:flex items-center gap-3 md:gap-4">
+              <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium text-sm">
                 INÍCIO
               </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium text-sm">
                 SOBRE
               </a>
-              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1">
+              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium text-sm flex items-center gap-1">
                 SERVIÇOS <ChevronDown size={16} />
               </a>
-              <a href="#products" className="text-foreground hover:text-primary transition-colors font-medium">
+              <a href="#products" className="text-foreground hover:text-primary transition-colors font-medium text-sm">
                 PRODUTOS
               </a>
-              <a href="#blog" className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1">
+              <a href="#blog" className="text-foreground hover:text-primary transition-colors font-medium text-sm flex items-center gap-1">
                 PÁGINAS <ChevronDown size={16} />
               </a>
             </div>

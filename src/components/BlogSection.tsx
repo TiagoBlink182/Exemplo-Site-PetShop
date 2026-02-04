@@ -46,14 +46,14 @@ const BlogSection = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-44 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-40 sm:h-44 md:h-44 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-sm font-medium">
                   Novo
                 </div>
               </div>
-              <div className="p-4">
-                <div className="flex items-center gap-3 text-sm text-muted-foreground mb-3">
+              <div className="p-3 md:p-4">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 text-xs md:text-sm text-muted-foreground mb-2 md:mb-3">
                   <span className="flex items-center gap-1">
                     <Calendar size={14} />
                     {post.date}
@@ -63,7 +63,7 @@ const BlogSection = () => {
                     {post.author}
                   </span>
                 </div>
-                <h3 className="font-bold text-foreground text-base mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-bold text-foreground text-sm md:text-base mb-1 md:mb-2 group-hover:text-primary transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-muted-foreground mb-3">

@@ -35,17 +35,17 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-8 bg-secondary">
-      <div className="container mx-auto px-2">
-        <div className="text-center max-w-2xl mx-auto mb-8">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+    <section id="services" className="py-6 md:py-8 lg:py-8 bg-secondary">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="text-center max-w-2xl mx-auto mb-6 md:mb-8">
+          <span className="text-primary font-semibold text-xs md:text-sm uppercase tracking-wider mb-4 block">
             Nossos Serviços
           </span>
           <h2 className="section-title">
             O QUE OFERECEMOS PARA SEU PET
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
           {services.map((service, index) => (
             <div
               key={index}

@@ -9,16 +9,16 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="about" className="py-10 md:py-16 lg:py-20 bg-background">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
           {/* Image */}
           <div className="relative animate-slide-in-left">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80"
                 alt="Cães felizes"
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[250px] md:h-[320px] lg:h-[400px] object-cover"
               />
             </div>
             {/* Floating Card (moved below image to avoid overlapping) */}

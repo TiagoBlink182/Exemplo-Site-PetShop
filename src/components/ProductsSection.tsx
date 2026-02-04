@@ -33,10 +33,10 @@ const products = [
 
 const ProductsSection = () => {
   return (
-    <section id="products" className="py-10 bg-background">
-      <div className="container mx-auto px-2">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+    <section id="products" className="py-8 md:py-12 lg:py-10 bg-background">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
+          <span className="text-primary font-semibold text-xs md:text-sm uppercase tracking-wider mb-4 block">
             Produtos
           </span>
           <h2 className="section-title">
@@ -44,7 +44,7 @@ const ProductsSection = () => {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4">
           {products.map((product, index) => (
             <div
               key={index}
@@ -54,14 +54,14 @@ const ProductsSection = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-40 sm:h-44 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <button className="absolute top-4 right-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <ShoppingCart size={18} className="text-primary-foreground" />
                 </button>
               </div>
-              <div className="p-4">
-                <div className="flex gap-1 mb-2">
+              <div className="p-2 sm:p-3 md:p-4">
+                <div className="flex gap-1 mb-1 sm:mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
@@ -70,9 +70,9 @@ const ProductsSection = () => {
                     />
                   ))}
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">{product.name}</h3>
+                <h3 className="font-semibold text-xs sm:text-sm text-foreground mb-1 sm:mb-2">{product.name}</h3>
                 <div className="flex items-center gap-2">
-                  <span className="text-primary font-bold text-lg">{product.price}</span>
+                  <span className="text-primary font-bold text-sm md:text-lg">{product.price}</span>
                   <span className="text-muted-foreground line-through text-sm">{product.originalPrice}</span>
                 </div>
               </div>

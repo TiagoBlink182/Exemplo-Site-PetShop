@@ -20,14 +20,14 @@ const team = [
 
 const TeamSection = () => {
   return (
-    <section id="team" className="py-10 bg-background">
-      <div className="container mx-auto px-2">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+    <section id="team" className="py-8 md:py-12 lg:py-10 bg-background">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-8 items-center">
           <div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+            <span className="text-primary font-semibold text-xs md:text-sm uppercase tracking-wider mb-4 block">
               Nossa Equipe
             </span>
-            <h2 className="section-title mb-4">
+            <h2 className="section-title mb-3 md:mb-4">
               PROFISSIONAIS QUALIFICADOS PARA O CUIDADO DE ANIMAIS DE ESTIMAÇÃO
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -39,7 +39,7 @@ const TeamSection = () => {
             </a>
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
             {team.map((member, index) => (
               <div
                 key={index}
@@ -48,7 +48,7 @@ const TeamSection = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 sm:h-52 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="absolute bottom-0 left-0 right-0 p-3">
